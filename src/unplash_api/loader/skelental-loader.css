@@ -1,0 +1,56 @@
+.loader-cards {
+  max-width: 950px;
+  width: 55%;
+  display: grid;
+  grid-auto-rows: 400px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, auto));
+  margin: -50px auto;
+  grid-gap: 1rem;
+}
+
+.loader-card {
+  border-radius: 0.3rem;
+  position: relative;
+}
+
+.loader-card_body {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 100%;
+}
+.text-title {
+  width: 70%;
+  height: 1rem;
+  background-color: lightgray;
+  margin-top: 0.8rem;
+}
+.text-location {
+  width: 50%;
+  height: 1rem;
+  margin-top: 0.8rem;
+  background-color: lightgray;
+}
+
+.animate {
+  animation: skelenton 1s infinite ease-in-out;
+}
+@keyframes skelenton {
+  0% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+    background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .loader-cards {
+    width: 70%;
+  }
+}
+
+

@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 1- Search input field */
+
+.search-bar-cont {
+  height: 15.5rem;
+  background-color: rgb(238, 237, 237);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 2- Styling for search bar container */
+
+.search-bar-cont__search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 5px;
+  padding: 5px 8px 5px 0;
+  background-color: #fff;
+}
+
+/* 3- Styling for search bar icon */
+
+.search-bar-cont__search-icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  background-image: url("/icons/search-icon2.png");
+  background-size: 22px 22px;
+  background-repeat: no-repeat;
+  margin: 12px 0.5rem 0 0.9rem;
+}
+
+/*4- Styling for seletter-spacing: 10px;arch bar input field */
+
+.search-bar-cont__input-field {
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  width: 100%;
+  line-height: 55px;
+  letter-spacing: 0.07rem;
+}
+
+.searching-for {
+  font-size: 20px;
+  display: none;
+}
+.searching-for span:nth-child(1) {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+
+/* -----------STLYING OF THE CARD LIST--------- */
+.card-list {
+  /*  max-width: 950px; */
+  width: 55%;
+  display: grid;
+  grid-auto-rows: 350px;
+  /*   grid-template-columns: repeat(auto-fill, minmax(250px, auto)); */
+  grid-template-columns: repeat(auto-fill, minmax(200px, auto));
+  margin: -50px auto;
+  grid-gap: 25px;
+}
+
+.card {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+.card-photo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+}
+
+/* ----------BREAK POINTS--------------- */
+@media (max-width: 64rem) {
+  .search-bar-cont__search-bar {
+    width: 80%;
+  }
+
+  .search-bar-cont__search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin: 8px 0.5rem 0 0.9rem;
+    background-size: 1rem 1rem;
+    margin-top: 5px;
+  }
+
+  .search-bar-cont__input-field {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 32rem) {
+  .search-bar-cont__search-bar {
+    width: 80%;
+  }
+
+  .search-bar-cont__input-field {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 22.5rem) {
+  .card-list {
+    justify-content: center;
+  }
+}
