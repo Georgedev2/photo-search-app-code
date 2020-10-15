@@ -40,9 +40,8 @@ function Search({ dispatch, data }) {
 
   const getInputValueHandler = (e) => {
     let address = "https://api.unsplash.com/search/photos?query=";
-    let apiAccessKey =
-      "&client_id=0fc8549db89ae4c1188627dcbfa7814ade834ef2ba33f5a738f9127b8eb1f11d";
-
+    let apiAccessKey=process.env.REACT_APP_apiAccessKey;
+   
     if (e.target.value !== "" && e.key === "Enter") {
       let q = e.target.value;
       let url = `${address}${q}${apiAccessKey}`;
@@ -116,6 +115,4 @@ const mapStateToProps = (state) => {
   };
 };
 export default connect(mapStateToProps)(Search);
-/*   https://api.unsplash.com/search/photos?query=london&client_id=0fc8549db89ae4c1188627dcbfa7814ade834ef2ba33f5a738f9127b8eb1f11d */
-// for development purpose
-// useEffect(() => {console.log(data);});
+
