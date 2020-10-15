@@ -1,0 +1,140 @@
+/* ------------STYLING OF MODAL------------- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 45%;
+  height: 40%;
+  z-index: 20;
+}
+
+.modal__closeBtn {
+  position: absolute;
+  top: -40px;
+  right: -45px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.modal__closeBtn:hover {
+  color: purple;
+}
+
+.modal__body {
+  position: relative;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.modal__body__img {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  cursor: pointer;
+  background-color:gray;
+}
+.modal__body__text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  color: gray;
+  bottom: 30px;
+  left: 20px;
+}
+.auto-name {
+  font-size: 20px;
+  font-weight: 550;
+}
+.auto-location {
+  align-self: self-end;
+}
+.modalActive {
+  display: block;
+}
+/*  
+  .showModal {
+    transform: scale(1);
+  } */
+
+@media (max-width: 64rem) {
+  .search-bar-cont__search-bar {
+    width: 80%;
+  }
+  .search-bar-cont__search-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+
+    margin: 8px 0.5rem 0 0.9rem;
+    background-size: 1rem 1rem;
+    margin-top: 5px;
+  }
+
+  .modal {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 80%;
+  }
+
+  .search-bar-cont__input-field {
+    line-height: 40px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 32rem) {
+  .modal {
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    width: 75%;
+    height: 250px;
+  }
+}
+
+@media (max-width: 32rem) {
+  .modal {
+    transform: translate(-50%, -60%);
+    width: 70%;
+    height: 200px;
+  }
+  .modal__closeBtn {
+    top: -40px;
+    right: -40px;
+  }
+}
+
+@media (max-width: 20rem) {
+  .modal {
+    top: 30%;
+    width: 60%;
+  }
+}
+
+/*
+ modal__body__text   {display: flex;
+    flex-direction: column}
+
+   auto-location  {align-self:self-end;}
+@mde360 {
+    card_list{
+      justify-content: center;
+  }
+  }
+  */

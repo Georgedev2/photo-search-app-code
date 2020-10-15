@@ -1,6 +1,6 @@
 import React from "react";
-import Search from "./unplash_api/Search";
-import "./App.css";
+ import Search from "./components/search/Search";
+import "./app.css";
 
 function App() {
   return (
