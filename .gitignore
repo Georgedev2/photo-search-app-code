@@ -7,7 +7,7 @@
 
 
 #api keys
-.env
+*.env
 
 # testing
 /coverage
