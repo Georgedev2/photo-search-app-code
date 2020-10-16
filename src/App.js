@@ -11,5 +11,6 @@ function App() {
     </div>
   );
 }
-//git remote add photo https://github.com/Georgedev2/photo-search-code.git
+
 export default App;
+
